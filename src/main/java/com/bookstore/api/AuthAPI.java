@@ -49,7 +49,7 @@ public class AuthAPI {
 
         // đưa role vào claims của access token
         Map<String, Object> claims = Map.of("role", role);
-        String accessToken = tokenProvider.generateAccessToken(user.getTenDangNhap(), claims);
+        String accessToken = tokenProvider.generateAccessToken(user.getTenDangNhap());
         String refreshToken = tokenProvider.generateRefreshToken(user.getTenDangNhap());
 
         Map<String, Object> resp = new HashMap<>();
@@ -100,7 +100,7 @@ public class AuthAPI {
         String role = (user.getVaiTro() != null && user.getVaiTro().getMaVT() != null)
                 ? user.getVaiTro().getMaVT()
                 : "KHACH_HANG";
-        String newAccess = tokenProvider.generateAccessToken(username, Map.of("role", role));
+        String newAccess = tokenProvider.generateAccessToken(username);
         return ResponseEntity.ok(Map.of("accessToken", newAccess));
     }
 }

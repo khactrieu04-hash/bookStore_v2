@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: bookstore-api
-    plan: free
-    dockerfilePath: ./Dockerfile
-    envVars:
-      - key: SPRING_PROFILES_ACTIVE
-        value: prod

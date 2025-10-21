@@ -1,0 +1,29 @@
+# Maven
+target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# VCS/IDE
+.git
+.gitignore
+.idea/
+*.iml
+.vscode/
+
+# Node (nếu có)
+node_modules/
+
+# Logs & temp
+logs/
+*.log
+tmp/
+.cache/
+
+# Docker/MySQL bind mount
+mysql_data/
+**/*.sock
+
+# Nếu bạn mount ảnh từ host thì không cần đưa vào image khi build
+images/
+static/
+data/

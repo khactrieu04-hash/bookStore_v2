@@ -1,0 +1,35 @@
+# Maven build
+target/
+
+# IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+bin/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.swp
+
+# Env / secrets (nếu có)
+.env
+.env.local
+
+# Runtime data (không commit)
+mysql_data/
+data/
+uploads/
+
+# Node (nếu có frontend trong repo)
+node_modules/
+
+# VSCode (nếu dùng)
+.vscode/
