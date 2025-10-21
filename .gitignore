@@ -33,3 +33,12 @@ node_modules/
 
 # VSCode (nếu dùng)
 .vscode/
+target/
+.mysql/**
+mysql_data/
+*.log
+.idea/
+.vscode/
+*.iml
+.DS_Store
+

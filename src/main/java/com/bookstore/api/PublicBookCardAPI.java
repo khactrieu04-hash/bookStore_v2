@@ -15,7 +15,6 @@ import com.bookstore.entity.LichSuGiaEntity;
 import com.bookstore.entity.SanPhamEntity;
 import com.bookstore.repository.LichSuGiaRepository;
 import com.bookstore.repository.SanPhamRepository;
-import com.bookstore.service.ImageService;
 import com.bookstore.service.ImageService_1;
 
 import lombok.RequiredArgsConstructor;

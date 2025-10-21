@@ -47,7 +47,6 @@ public class AuthAPI {
                 ? user.getVaiTro().getMaVT()
                 : "KHACH_HANG";
 
-        // đưa role vào claims của access token
         Map<String, Object> claims = Map.of("role", role);
         String accessToken = tokenProvider.generateAccessToken(user.getTenDangNhap());
         String refreshToken = tokenProvider.generateRefreshToken(user.getTenDangNhap());
